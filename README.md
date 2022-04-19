@@ -55,5 +55,5 @@ Append `project` and `availability_zone` to metrics tags:
 You should be able to call this from telegraf now using execd:
 ```
 [[processors.execd]]
-  command = ["/var/lib/telegraf/metadata", "--config", "/var/lib/telegraf/plugin.conf"]
+  command = ["/var/lib/telegraf/openstack/metadata", "--config", "/var/lib/telegraf/openstack/plugin.conf"]
 ```
