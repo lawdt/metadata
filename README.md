@@ -15,6 +15,7 @@ go build -o metadata cmd/main.go
 mkdir -p /var/lib/telegraf/openstack
 mv metadata /var/lib/telegraf/openstack/
 mv plugin.conf /var/lib/telegraf/openstack/
+chown -R telegraf:telegraf /var/lib/telegraf
 ```
 
 ## Plugin Configuration
